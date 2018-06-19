@@ -7,7 +7,7 @@ git config --global user.email "E-mail"
 
 Create a new repository
 -----------------------------------------------------------------------------------------
-git clone git@gitlab.com:gugatb/playlist.git  
+git clone https://github.com/Gugatb/ifood-backend-advanced-test.git  
 cd playlist  
 touch README.md  
 git add README.md  
@@ -18,7 +18,7 @@ Existing folder
 -----------------------------------------------------------------------------------------
 cd existing_folder  
 git init  
-git remote add origin git@gitlab.com:gugatb/playlist.git  
+git remote add origin https://github.com/Gugatb/ifood-backend-advanced-test.git  
 git add .  
 git commit -m "Initial commit"  
 git push -u origin master  
@@ -27,7 +27,7 @@ Existing Git repository
 -----------------------------------------------------------------------------------------
 cd existing_repo  
 git remote rename origin old-origin  
-git remote add origin git@gitlab.com:gugatb/playlist.git  
+git remote add origin https://github.com/Gugatb/ifood-backend-advanced-test.git  
 git push -u origin --all  
 git push -u origin --tags  
 
