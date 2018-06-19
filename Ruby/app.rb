@@ -33,8 +33,8 @@ def get_dictionary_by_coordinate(params)
     # Obter a categoria e faixas de reproducao.
     dictionary['category'] = get_category(dictionary['temperature'])
     dictionary['tracks'] = get_tracks(dictionary['category'])
-  rescue Exception => message
-    dictionary['error'] = message
+  rescue
+    dictionary['error'] = true
   end
   return dictionary
 end
@@ -66,8 +66,8 @@ def get_dictionary_by_country(params)
     # Obter a categoria e faixas de reproducao.
     dictionary['category'] = get_category(dictionary['temperature'])
     dictionary['tracks'] = get_tracks(dictionary['category'])
-  rescue Exception => message
-    dictionary['error'] = message
+  rescue
+    dictionary['error'] = true
   end
   return dictionary
 end

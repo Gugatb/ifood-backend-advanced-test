@@ -1,24 +1,4 @@
 
-# Obter a recomendacao.
-# Author: Gugatb
-# Date: 17/06/2018
-# Param: location a localizacao
-# Param: playlist a lista de reproducao
-# Param temperature a temperatura
-# Return: recommendation a recomendacao
-def get_rrecommendation(location, playlist, temperature)
-    return {'location' => location, 'playlist' => playlist, 'temperature' => temperature}
-end
-
-# Obter a resposta.
-# Author: Gugatb
-# Date: 17/06/2018
-# Param: value o valor
-# Return: response a resposta
-def get_rresponse(value)
-    return {'response' => value, 'time' => Time.now}
-end
-
 # Obter a localizacao.
 # Author: Gugatb
 # Date: 17/06/2018
@@ -39,6 +19,26 @@ end
 # Return: playlist a lista de reproducao
 def get_rplaylist(category, tracks)
     return {'category' => category, 'tracks' => get_rtracks(tracks)}
+end
+
+# Obter a recomendacao.
+# Author: Gugatb
+# Date: 17/06/2018
+# Param: location a localizacao
+# Param: playlist a lista de reproducao
+# Param temperature a temperatura
+# Return: recommendation a recomendacao
+def get_rrecommendation(location, playlist, temperature)
+    return {'location' => location, 'playlist' => playlist, 'temperature' => temperature}
+end
+
+# Obter a resposta.
+# Author: Gugatb
+# Date: 17/06/2018
+# Param: value o valor
+# Return: response a resposta
+def get_rresponse(value)
+    return {'response' => value, 'time' => Time.now}
 end
 
 # Obter a temperatura.
